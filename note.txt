@@ -4,7 +4,7 @@ This app have:
 - client login and logout
 - CRUD API
 - CRUD table on client
-- relation table with prisma
+- relation database table with prisma
 - create and update with modal form
 - pokemon dashboard page
 - infinite load more on dashboard page
@@ -12,7 +12,7 @@ This app have:
 - pokemon link to evolution form
 - backend pagination
 - client loading pagination
-- use SWR to fetching
+- use SWR + axios to fetching
 - client loading when fetching
 - client API services
 - server API routes
@@ -21,6 +21,7 @@ This app have:
 - manage app route with next middleware
 - UX/UI that is still usable
 - basic responsive design
+- clean code and architecture design
 
 Note: this app not allow to register on production
 
