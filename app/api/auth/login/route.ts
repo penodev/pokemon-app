@@ -1,7 +1,8 @@
-import { db } from "@/lib/db";
-import { generateToken } from "@/lib/token";
 import bcrypt from "bcrypt";
 import { NextRequest, NextResponse } from "next/server";
+
+import { db } from "@/lib/db";
+import { generateToken } from "@/lib/token";
 
 export async function POST(req: NextRequest) {
   try {

@@ -1,6 +1,7 @@
+import { NextResponse } from "next/server";
+
 import { db } from "@/lib/db";
 import { apiVerifyToken } from "@/lib/token";
-import { NextResponse } from "next/server";
 
 export async function GET(request: Request) {
   try {
