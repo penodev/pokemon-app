@@ -87,15 +87,13 @@ export const request = async <T>({
 };
 
 request.get = async <T>(url: string) => {
-  const tokens = !!getCookie("jwt")
-    ? JSON.parse(getCookie("jwt") || "{}")
-    : null;
+  const tokens = !!getCookie("jwt") ? getCookie("jwt") : null;
   return axios
     .get<T>(`${path}${url}`, {
       headers: !!tokens
         ? {
             contentType: "application/json",
-            Authorization: "Bearer " + String(tokens.accessToken),
+            Authorization: "Bearer " + String(tokens),
           }
         : { contentType: "application/json" },
     })

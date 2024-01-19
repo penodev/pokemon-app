@@ -33,7 +33,6 @@ export const verifyToken = async (token?: string) => {
   if (secret) {
     try {
       if (token) {
-        console.log(token);
         const decoded = <JwtPayloadType>jwt.verify(token, secret);
         if (decoded) {
           return { success: decoded };

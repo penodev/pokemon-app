@@ -1,3 +1,29 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react-hooks/rules-of-hooks": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "import/order": [
+      "warn",
+      {
+        "groups": ["external", "internal", "builtin"],
+        "pathGroups": [
+          {
+            "pattern": "*",
+            "group": "external"
+          },
+          {
+            "pattern": "@app/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "*",
+            "group": "builtin",
+            "position": "after"
+          }
+        ],
+        "newlines-between": "always"
+      }
+    ]
+  }
 }

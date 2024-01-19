@@ -1,0 +1,37 @@
+This app have:
+- access token login with time limit
+- register page and API
+- client login and logout
+- CRUD API
+- CRUD table on client
+- relation table with prisma
+- create and update with modal form
+- pokemon dashboard page
+- infinite load more on dashboard page
+- pokemon detail page
+- pokemon link to evolution form
+- backend pagination
+- client loading pagination
+- use SWR to fetching
+- client loading when fetching
+- client API services
+- server API routes
+- protected page routes
+- protected API routes
+- manage app route with next middleware
+- UX/UI that is still usable
+- basic responsive design
+
+Note: this app not allow to register on production
+
+Due to limited time Therefore, I would like to omit the following features:
+- refresh token
+- sorting data
+- fix type with ENUM
+- form validation
+- error message for validation
+- select dropdown type, multipliers, and weakness
+- create and edit next/previous evolution
+- pokemon filter by type
+- type with color
+

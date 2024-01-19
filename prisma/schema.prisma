@@ -24,21 +24,22 @@ model User {
 
 model Pokemon {
   id             String    @id @default(auto()) @map("_id") @db.ObjectId
-  num String
+  num String      @unique
   name String
   image String
-  type String[]
+  type String[]     // should be enum
   height String
   weight String
   candy String
   egg String
   multipliers Float[]
-  weaknesses String[]
+  weaknesses String[] // should be enum
+  candyCount Int?
   spawnChance Float
   avgSpawns Float
   spawnTime String
-  prevEvolotion PrevEvolution[]
-  nextEvolotion NextEvolution[]
+  prevEvolution PrevEvolution[]
+  nextEvolution NextEvolution[]
 
   createdAt      DateTime  @default(now())
   updatedAt      DateTime  @updatedAt
