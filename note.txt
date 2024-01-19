@@ -34,4 +34,5 @@ Due to limited time Therefore, I would like to omit the following features:
 - create and edit next/previous evolution
 - pokemon filter by type
 - type with color
+- skeleton loading
 

@@ -5,7 +5,8 @@ interface LabelItemProps {
 export const LabelItem = ({ title, value }: LabelItemProps) => {
   return (
     <div>
-      <span className='capitalize'>{title}</span>: {value}
+      <span className='capitalize font-semibold mr-2'>{title}:</span>
+      {value}
     </div>
   );
 };

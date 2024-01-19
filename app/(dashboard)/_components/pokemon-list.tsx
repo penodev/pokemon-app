@@ -36,7 +36,7 @@ export const PokemonList = () => {
 
   return (
     <div className='py-8 flex flex-col items-center'>
-      <div className='w-full py-8 max-w-screen-md flex flex-wrap gap-4'>
+      <div className='w-full py-8 max-w-screen-md grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-4'>
         {data?.data.map((pokemon) => (
           <PokemonCard key={pokemon.id} pokemon={pokemon} />
         ))}
